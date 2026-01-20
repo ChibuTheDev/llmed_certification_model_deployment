@@ -124,6 +124,10 @@ These plots show latency trends over successive inference requests and confirm s
 
 ```
 .
+├── UI/
+│   └── app.py
+│   └── requierements.txt         # Gradio UI for HF Space
+├── requirements.txt        # Space dependencies
 ├── logs/
 │   └── demo_summaries.xlsx
 ├── notebooks/
@@ -136,7 +140,8 @@ These plots show latency trends over successive inference requests and confirm s
 │   ├── Latency Plot.png
 │   └── Error Plot.png
 ├── .env
-└── Readme.md
+└── README.md
+
 ```
 
 ---
@@ -157,6 +162,10 @@ These plots show latency trends over successive inference requests and confirm s
 
 * Open `notebooks/inference_demo.ipynb`
 * Execute cells to send requests to the deployed endpoint
+
+### Running HF Space
+
+You can also choose to run this on the hugging face spaces with this [link](https://huggingface.co/spaces/Chibuu/llm-inference-demo) 
 
 ### Running Performance & Monitoring Tests
 
