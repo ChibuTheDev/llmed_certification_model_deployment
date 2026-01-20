@@ -165,7 +165,7 @@ These plots show latency trends over successive inference requests and confirm s
 
 ### Running HF Space
 
-You can also choose to run this on the hugging face spaces with this [link](https://huggingface.co/spaces/Chibuu/llm-inference-demo) 
+A simple demo UI is also available to run this on the hugging face spaces with this [link](https://huggingface.co/spaces/Chibuu/llm-inference-demo) 
 
 ### Running Performance & Monitoring Tests
 
