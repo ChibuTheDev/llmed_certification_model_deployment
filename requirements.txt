@@ -1,0 +1,11 @@
+transformers   
+torch  
+pandas  
+wandb  
+ 
+gradio
+requests
+json
+os 
+time 
+dotenv
