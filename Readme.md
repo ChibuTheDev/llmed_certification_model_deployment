@@ -49,7 +49,7 @@ The LoRA adapters were merged into the full model prior to deployment to simplif
 
 - **Platform:** Hugging Face Inference Endpoint
 - **Deployment Type:** Managed real-time inference
-- **GPU:** NVIDIA T4 (16GB)
+- **vCPU:** Intel Sapphire Rapids (16GB)
 - **Billing Model:** Time-based billing (~$0.27/hour)
 - **Region:** US-East
 - **Scaling:** 1–3 replicas (auto-scaling enabled)
@@ -147,7 +147,7 @@ Push merged fine-tuned model to your private repository.
 
 1. Navigate to Hugging Face → Inference Endpoints    
 2. Select your model    
-3. Choose GPU instance (NVIDIA T4)    
+3. Choose CPU/GPU instance  
 4. Enable autoscaling (1–3 replicas)       
 5. Deploy endpoint    
 6. Copy endpoint URL    
