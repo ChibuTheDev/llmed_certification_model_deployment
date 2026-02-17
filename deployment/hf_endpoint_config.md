@@ -19,11 +19,3 @@ scaling:
   metric: requests_per_second
   min_replicas: 1
   max_replicas: 3
-
-runtime:
-  task: summarization
-  framework: transformers
-  max_input_length: 1024
-  max_output_tokens: 256
-  expected_latency_ms_p50: 800
-  expected_latency_ms_p99: 1500
