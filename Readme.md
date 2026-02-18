@@ -163,9 +163,6 @@ python src/inference.py
 ```
 Or use `notebooks/inference_demo.ipynb`
 
-> (TO BE ENCLOSED?) Inference Access : Inference is demonstrated using a Python client that sends requests directly to the deployed Hugging Face endpoint. The endpoint accepts raw dialogue text and returns a concise summary.
-Running Inference:  Open `notebooks/inference_demo.ipynb`, Execute cells to send requests to the deployed endpoint  
-
 ## Client Code
 
 Client implementation is located in:
