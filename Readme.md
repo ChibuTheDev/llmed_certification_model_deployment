@@ -302,7 +302,7 @@ UI/app.py
 
 This allows interactive summarization via Hugging Face Spaces.  
 
-The Hugging Face Spaces demo UI is available at the following link: [Link](https://huggingface.co/spaces/Chibuu/llm-inference-demo). Please note that the current configuration connects to a private inference endpoint and therefore requires owner-level authentication.  
+The Hugging Face Spaces demo UI is available at the following link: [Link](https://huggingface.co/spaces/Chibuu/llm-inference-demo). 
 
 ---  
 
