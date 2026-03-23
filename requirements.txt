@@ -3,9 +3,9 @@ torch
 pandas  
 wandb  
  
-gradio
+gradio (gradio==4.x.x)
 requests
-json
-os 
-time 
-dotenv
+
+python-dotenv
+
+huggingface_hub
