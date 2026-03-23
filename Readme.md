@@ -213,7 +213,7 @@ A reproducible evaluation was conducted using **10 dialogue samples** to measure
 
 Performance analysis (testing) can be reproduced by running:
 
-* `notebooks/performance_analysis.ipynb`
+* `notebooks/performance_and_cost_evaluation_and_wandb.ipynb`
 
 This notebook:
 
@@ -265,7 +265,7 @@ Latency values varied across requests, which is expected for managed cloud infer
 * `error_flag` — binary flag indicating request failure
 * `token usage` - derived  
 
-Metrics are logged per request for real-time visibility. See `performance_and_cost_evaluation_and_wandb.ipynb`.
+Metrics are logged per request for real-time visibility. See `notebooks/performance_and_cost_evaluation_and_wandb.ipynb`.
 
 ### Monitoring Visualizations
 
@@ -297,7 +297,7 @@ Each inference request logs metrics to W&B in real time, enabling per-request vi
 A Gradio-based UI is available in:
 
 ```bash  
-UI/app.py
+ui/app.py
 ```  
 
 This allows interactive summarization via Hugging Face Spaces.  
@@ -310,8 +310,8 @@ The Hugging Face Spaces demo UI is available at the following link: [Link](https
 
 A dynamic cost model with adjustable parameters is provided:
 
-- **Editable Spreadsheet**: `cost_model/cost_estimate.xlsx`
-- **Viewable PDF**: `cost_model/cost_estimate.pdf`
+- **Editable Spreadsheet**: `docs/cost_estimate.xlsx`
+- **Viewable PDF**: `docs/cost_estimate.pdf`
 
 The detailed and dynamically calculated deployment cost model, provided in `cost_estimate.xlsx`, includes infrastructure cost breakdowns (GPU, storage, network, monitoring), throughput assumptions, and cost-per-1,000 request calculations based on a conservative utilization model. All formulas are editable, allowing adjustment of GPU pricing, request volume, and optimization strategies to simulate different production scenarios.
 
