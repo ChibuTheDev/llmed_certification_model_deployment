@@ -54,7 +54,11 @@ The LoRA adapters were merged into the full model prior to deployment to simplif
 - **Region:** US-East
 - **Scaling:** 1–3 replicas (auto-scaling enabled)
 
-Deployment configuration details are documented in `deployment/hf_endpoint_config.md` 
+An example of deployment configuration details is documented in `deployment/hf_endpoint_config.md`.     
+
+Unlike the `deployment/hf_endpoint_config.md` file, which provides a static example configuration, the `deployment/create_hf_endpoint.py`script enables users to dynamically specify deployment parameters such as the model repository, region, and hardware. Thus, the `deployment/create_hf_endpoint.py` script allows users to programmatically create a Hugging Face Inference Endpoint using the huggingface_hub library.
+
+The script outputs the parameters used for deployment, rather than fixed configuration values, making it flexible and reusable for different models and setups.  
 
 ---
 
@@ -84,6 +88,7 @@ Alternative platforms (AWS SageMaker, self-hosted EC2, Modal, vLLM) were conside
 .
 ├── deployment/
 │ └── hf_endpoint_config.md
+│ └── create_hf_endpoint.py
 ├── logs/
 │   └── demo_summaries.csv  #Example Prompts & Outputs
 ├── UI/

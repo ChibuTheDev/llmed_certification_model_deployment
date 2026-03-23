@@ -1,21 +1,3 @@
-from huggingface_hub import create_inference_endpoint
-
-endpoint = create_inference_endpoint(
-    name="bart-highlightsum-endpoint",
-    repository="ReadyTensorCertification/bart-highlightsum-merged",
-    framework="pytorch",
-    task="summarization",
-    accelerator="cpu",  # or "gpu"
-    vendor="aws",
-    region="us-east-1",
-    type="protected",  # requires token
-)
-
-print("Endpoint created!")
-print("URL:", endpoint.url)
-
-
-# updated version based on hf_endpint_config.md 
 
 import argparse
 from huggingface_hub import create_inference_endpoint
@@ -25,7 +7,8 @@ def main():
 
     # ---- Configurable parameters ----
     parser.add_argument("--name", required=True, help="Endpoint name")
-    parser.add_argument("--repository", required=True, help="Model repository")
+    #parser.add_argument("--repository", required=True, help="Model repository")
+    parser.add_argument("--repository", default="ReadyTensorCertification/bart-highlightsum-merged")
     parser.add_argument("--framework", default="pytorch")
     parser.add_argument("--task", default="summarization")
     parser.add_argument("--accelerator", default="cpu", choices=["cpu", "gpu"])
