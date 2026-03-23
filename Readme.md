@@ -85,7 +85,7 @@ Alternative platforms (AWS SageMaker, self-hosted EC2, Modal, vLLM) were conside
 ├── deployment/
 │ └── hf_endpoint_config.md
 ├── logs/
-│   └── demo_summaries.csv  Example Prompts & Outputs
+│   └── demo_summaries.csv  #Example Prompts & Outputs
 ├── UI/
 │   └── app.py
 ├── notebooks/
