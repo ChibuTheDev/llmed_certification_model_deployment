@@ -305,9 +305,15 @@ A Gradio-based UI is available in:
 ui/app.py
 ```  
 
-This allows interactive summarization via Hugging Face Spaces.  
+This allows interactive summarization via Hugging Face Spaces. This application does **not host the model locally**. It requires a **deployed Hugging Face Inference Endpoint for the specified model**. This means that, before using the app, the user must:
+
+- Deploy a Hugging Face Inference Endpoint for the **ReadyTensorCertification/bart-highlightsum-merged**  
+- Obtain:  
+  - An Endpoint URL  
+  - An Hugging Face API Token  
 
 The Hugging Face Spaces demo UI is available at the following [Link](https://huggingface.co/spaces/Chibuu/llm-inference-demo). 
+
 
 ---  
 
