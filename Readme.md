@@ -307,7 +307,7 @@ ui/app.py
 
 This allows interactive summarization via Hugging Face Spaces.  
 
-The Hugging Face Spaces demo UI is available at the following link: [Link](https://huggingface.co/spaces/Chibuu/llm-inference-demo). 
+The Hugging Face Spaces demo UI is available at the following [Link](https://huggingface.co/spaces/Chibuu/llm-inference-demo). 
 
 ---  
 
