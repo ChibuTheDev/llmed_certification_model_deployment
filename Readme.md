@@ -283,7 +283,7 @@ wandb_graphs/
 ```
 
 These plots show latency trends over successive inference requests and confirm stable endpoint behavior.
-
+>_Note_: To focus on user-facing performance and reliability, only latency and error rate plots are shown. These metrics directly reflect response time and system correctness, while other metrics are used for internal monitoring and remained within acceptable thresholds during evaluation.
 
 ### Observability Setup
 
