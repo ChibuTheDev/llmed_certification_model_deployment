@@ -208,7 +208,7 @@ Oliver: Great"""
 Oliver is voting for Liberals this election.
 ```
 
-Additional test examples are available in `src/demo_summaries.csv`
+Additional test examples are available in `logs/demo_summaries.csv`
 
 ---  
 
